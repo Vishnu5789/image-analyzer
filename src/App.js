@@ -34,7 +34,7 @@ function App() {
       const formData = new FormData();
       formData.append('image', selectedImage);
 
-      const response = await fetch('https://spring-ai-0qqg.onrender.com/api/gemini/prompt', {
+      const response = await fetch('http://20.40.51.233:8080/api/gemini/prompt', {
         method: 'POST',
         body: formData,
       });
